@@ -20,8 +20,8 @@ function startGame() {
 function startCombo(){
   while (play) {
   
-    // console.log(`${name} has ${userHP} health left.`);
-    // console.log(`Grant has ${grantHP} health left.`);
+  console.log(`${name} has ${userDam} health left.`);
+  console.log(`Grant has ${grantDam} health left.`);
   let attack = prompt("Would you like to attack or quit?");
  if(attack === "attack"){
   userHP -= userDam;
@@ -30,6 +30,7 @@ function startCombo(){
  }else{
    return;
  }
+}
     if (grantHP <= 0) {
        wins++;
       grantHP = 10;
@@ -38,7 +39,7 @@ function startCombo(){
         break;
       } 
       }
-    } 
+    
     if (userHP <= 0) {
       console.log(`${name} has been defeated. Sucks to suck.`);
       // break;
