@@ -8,13 +8,13 @@ let userDam = 0;
 let grantDam =0;
 
 function startGame() {
-  //    play = prompt("Would you like to play?");
-  //  if (play === "yes") {
+     play = prompt("Would you like to play?");
+   if (play === "yes") {
   
-  //  name = prompt("Enter your name.");
+   name = prompt("Enter your name.");
    startCombo();
-  //  }else {
-  //   prompt("Next Time");
+   }else {
+    prompt("Next Time");
   }
 
 function startCombo(){
